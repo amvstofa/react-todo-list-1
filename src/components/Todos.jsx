@@ -1,7 +1,7 @@
 import React from 'react';
-import TodoItem from './TodoItem'; // Lakukan import
+import TodoItem from './TodoItem';
 
-const Todos = ({ todos }) => {
+const Todos = ({ todos, toggleCompleted, deleteTodo }) => {
   return (
     <div style={styles.container}>
       {todos.map((todo) => {
